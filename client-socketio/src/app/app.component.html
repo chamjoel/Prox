@@ -1,0 +1,10 @@
+<input  (keyup)="$event.keyCode == 13 && chiave(ciao)" #ciao/>
+<button (click)="chiave(ciao)">chiave</button>
+<br>
+
+<input  (keyup)="$event.keyCode == 13 && sendMessage(message)" #message/>
+<button (click)="sendMessage(message)">Send Message</button>
+
+<div *ngFor = "let message of messageList">
+  {{message}}
+</div>
